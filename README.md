@@ -34,9 +34,17 @@ If you plan to use `Makie#master`, you likely also need to check out `AbstractPl
 ## Dependencies
 You will need to have ffmpeg in the path to run the video recording examples.
 On linux you also need to add the following to get GLFW to build (if you don't have those already):
+
+### Debian/Ubuntu
 ```
 sudo apt-get install ffmpeg cmake xorg-dev
 ```
+
+### RedHat/Fedora
+```
+sudo dnf install ffmpeg cmake libXrandr-devel libXinerama-devel libXcursor-devel
+```
+Note that the [RPM Fusion repo](https://rpmfusion.org/) is needed for `ffmpeg`.
 
 # Ecosystem
 
@@ -128,8 +136,8 @@ To do that, you need to check out the additional packages for precompilation.
 Then you can build a system image like this:
 
 ```julia
-# add PackageCompiler
-Pkg.add("PackageCompiler")
+# add PackageCompiler and other dependencies
+Pkg.add.(["PackageCompiler", "AbstractPlotting", "GDAL", "GeometryTypes", "MakieGallery", "RDatasets"])
 using PackageCompiler
 # This is not well tested, so please be careful - I don't take any responsibilities for a messed up Julia install.
 
