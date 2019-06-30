@@ -4,21 +4,19 @@
 
 
 
-From the japanese word [Maki-e](https://en.wikipedia.org/wiki/Maki-e), which is a technique to sprinkle lacquer with gold and silver powder.
-Data is basically the gold and silver of our age, so lets spread it out beautifully on the screen!
+From the japanese word [_Maki-e_](https://en.wikipedia.org/wiki/Maki-e), which is a technique to sprinkle lacquer with gold and silver powder.
+Data is basically the gold and silver of our age, so let's spread it out beautifully on the screen!
 
-**Documentation**: [![][docs-old-img]][docs-old-url] [![][docs-stable-img]][docs-stable-url] [![][docs-master-img]][docs-master-url]
+**Documentation**: [![][docs-stable-img]][docs-stable-url] [![][docs-master-img]][docs-master-url]
 
 Build status: [![][gitlab-img]][gitlab-url]
 
 [gitlab-img]: https://gitlab.com/JuliaGPU/Makie.jl/badges/master/pipeline.svg
 [gitlab-url]: https://gitlab.com/JuliaGPU/Makie.jl/pipelines
-[docs-old-img]:    https://img.shields.io/badge/docs-old-lightgrey.svg
-[docs-old-url]:    http://makie.juliaplots.org/stable/
-[docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
-[docs-stable-url]: http://juliaplots.org/MakieGallery.jl/stable/
+[docs-stable-img]: https://img.shields.io/badge/docs-stable-lightgrey.svg
+[docs-stable-url]: http://makie.juliaplots.org/stable/
 [docs-master-img]: https://img.shields.io/badge/docs-master-blue.svg
-[docs-master-url]: http://juliaplots.org/MakieGallery.jl/stable/
+[docs-master-url]: http://makie.juliaplots.org/dev/
 
 
 # Installation
@@ -49,6 +47,8 @@ Note that the [RPM Fusion repo](https://rpmfusion.org/) is needed for `ffmpeg`.
 # Ecosystem
 
 `Makie.jl` is the metapackage for a rich ecosystem, which consists of [`GLMakie.jl`](https://github.com/JuliaPlots/GLMakie.jl), [`CairoMakie.jl`](https://github.com/JuliaPlots/CairoMakie.jl) and [`WGLMakie.jl`](https://github.com/JuliaPlots/WGLMakie.jl) (the backends); [`AbstractPlotting.jl`](https://github.com/JuliaPlots/AbstractPlotting.jl) (the bulk of the package); and [`StatsMakie.jl`](https://github.com/JuliaPlots/StatsMakie.jl) (statistical plotting support, as in `StatPlots.jl`).
+
+Examples, and test infrastructure, are hosted at [`MakieGallery.jl`](https://github.com/JuliaPlots/MakieGallery.jl)
 
 ## Examples from the documentation: 
 
